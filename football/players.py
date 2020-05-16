@@ -24,7 +24,13 @@ class Player:
         total_points = td_points + safety_points
         return total_points
 
-
+class Defense(Player):
+    '''
+    overides defaults of the Player class for defense players
+    '''
+    def __init__(self, name=None, yards=None, touchdowns=None, completed_passes=None,
+                 interceptions=None, safety=None, field_goals=None):
+        pass
 class Quarterback(Player):
     '''Override certain parameters of the default Player class and add some
     functionality unique to quarterbacks
